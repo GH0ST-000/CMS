@@ -12,6 +12,8 @@
     <meta name="author" content="" />
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/JavaScript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <style>
         .gradient {
             background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
@@ -37,16 +39,39 @@
         </div>
         <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 bg-white lg:bg-transparent text-black p-4 lg:p-0 z-20" id="nav-content">
             <ul class="list-reset lg:flex justify-end flex-1 items-center">
+{{--                <li class="mr-3">--}}
+{{--                    <a class="inline-block py-2 px-4 text-black font-bold no-underline" href="#">Feature</a>--}}
+{{--                </li>--}}
+{{--                <li class="mr-3">--}}
+{{--                    <a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4" href="#">Pricing</a>--}}
+{{--                </li>--}}
+{{--                <li class="mr-3">--}}
+{{--                    <a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4" href="#">Contact</a>--}}
+{{--                </li>--}}
                 <li class="mr-3">
-                    <a class="inline-block py-2 px-4 text-black font-bold no-underline" href="#">Feature</a>
-                </li>
-                <li class="mr-3">
-                    <a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4" href="#">Pricing</a>
-                </li>
-                <li class="mr-3">
-                    <a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4" href="#">Contact</a>
+                    <button id="lang_switcher" type="button" data-dropdown-toggle="dropdown" class="text-black border-b-2 font-medium rounded-lg text-sm px-4 py-1 text-center inline-flex items-center " >
+                        GEO
+                        <img class="w-6 h-6 rounded-full ml-2" src="{{asset('images/georgia.svg')}}">
+                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div id="dropdown_lang" class="z-10 fixed hidden ml-4 bg-white divide-gray-100 rounded">
+                        <ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefault">
+                            <li class="flex justify-between items-center text-center text-black">
+                                <a class="flex justify-between items-center text-center text-black" href="#">
+                                    <span class="ml-2">EN</span>
+                                    <img class="w-6 h-6 rounded-full ml-2" src="{{asset('images/usa.png')}}">
+                                    <svg class="w-4 h-4 ml-2 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </li>
             </ul>
+
             <button
                 id="navAction"
                 class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
@@ -58,6 +83,7 @@
     <hr class="border-b border-gray-100 opacity-25 my-0 py-0" />
 </nav>
 <!--Hero-->
+
 <div class="pt-24">
     <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
         <!--Left Col-->
@@ -364,8 +390,13 @@
             </div>
         </div>
     </div>
-    <a href="https://www.freepik.com/free-photos-vectors/background" class="text-gray-500">Background vector created by freepik - www.freepik.com</a>
+    <div class="text-center text-gray-700 p-4" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2022 Copyright:
+        <a class="text-gray-800" href="https://tailwind-elements.com/">HADES 11</a>
+    </div>
 </footer>
 </body>
 </html>
 <script src="{{asset('js/Landing/landing.js')}}"></script>
+
+

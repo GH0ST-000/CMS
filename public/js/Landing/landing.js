@@ -76,3 +76,8 @@ document.addEventListener("scroll", function () {
 }
     return false;
 }
+$("#lang_switcher").click(function(){
+
+    $('#dropdown_lang').toggle();
+
+});
