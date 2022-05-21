@@ -39,15 +39,6 @@
         </div>
         <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 bg-white lg:bg-transparent text-black p-4 lg:p-0 z-20" id="nav-content">
             <ul class="list-reset lg:flex justify-end flex-1 items-center">
-{{--                <li class="mr-3">--}}
-{{--                    <a class="inline-block py-2 px-4 text-black font-bold no-underline" href="#">Feature</a>--}}
-{{--                </li>--}}
-{{--                <li class="mr-3">--}}
-{{--                    <a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4" href="#">Pricing</a>--}}
-{{--                </li>--}}
-{{--                <li class="mr-3">--}}
-{{--                    <a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4" href="#">Contact</a>--}}
-{{--                </li>--}}
                 <li class="mr-3">
                     <button id="lang_switcher" type="button" data-dropdown-toggle="dropdown" class="text-black border-b-2 font-medium rounded-lg text-sm px-4 py-1 text-center inline-flex items-center " >
                         GEO
@@ -56,7 +47,7 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                         </svg>
                     </button>
-                    <div id="dropdown_lang" class="z-10 fixed hidden ml-4 bg-white divide-gray-100 rounded">
+                    <div id="dropdown_lang" class="z-10 fixed hidden mt-1 ml-4 bg-white divide-gray-100 rounded">
                         <ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefault">
                             <li class="flex justify-between items-center text-center text-black">
                                 <a class="flex justify-between items-center text-center text-black" href="#">
@@ -318,6 +309,7 @@
     <div class="w-full mb-4">
         <div class="h-1 mx-auto bg-white w-1/6 opacity-25 my-0 py-0 rounded-t"></div>
     </div>
+
     <h3 class="my-4 text-3xl leading-tight">
      This Platforms can be cloud-based or on premises, but users can access content from anywhere with a device that's connected to the internet
     </h3>

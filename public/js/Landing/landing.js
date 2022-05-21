@@ -78,6 +78,6 @@ document.addEventListener("scroll", function () {
 }
 $("#lang_switcher").click(function(){
 
-    $('#dropdown_lang').toggle();
+    $('#dropdown_lang').toggle(500);
 
 });
