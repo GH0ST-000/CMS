@@ -12,7 +12,9 @@ A content management system (CMS) is computer software used to manage the creati
 ## Set Up
 
 To set up project, run the following command
-
+```bash
+ clone project
+```
 ```bash
  composer install
 ```
