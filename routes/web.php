@@ -11,10 +11,8 @@ Route::controller(LandingController::class)->group(function () {
     });
 
 
-
-
 Route::get('/dashboard', function () {
-    return view('Frontend.dashboard');
+    return view('Frontend.pages.home');
 })->middleware(['auth'])->name('dashboard');
 
 require __DIR__.'/auth.php';
