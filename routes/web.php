@@ -6,9 +6,9 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::controller(LandingController::class)->group(function () {
-        Route::get('/', 'index')->name('index');
-        Route::get('/authentication_user', 'create')->name('authentication_user');
-        Route::get('/login_user', 'login_user')->name('login_user');
+    Route::get('/', 'index')->name('index');
+    Route::get('/authentication_user', 'create')->name('authentication_user');
+    Route::get('/login_user', 'login_user')->name('login_user');
 });
 
 Route::controller(BackEndController::class)->middleware(['auth'])->group(function (){
@@ -16,9 +16,11 @@ Route::controller(BackEndController::class)->middleware(['auth'])->group(functio
     Route::get('/task','Task')->name('task');
 });
 
-Route::get('/marketplace',[MarketplaceController::class,'index'])->middleware(['auth'])->name('marketplace');
 
-
+Route::controller(MarketplaceController::class)->middleware(['auth'])->group(function (){
+    Route::get('/marketplace','index')->name('marketplace');;
+    Route::post('/add_new_subscription','store')->name('add_new_subscription');;
+});
 
 
 
